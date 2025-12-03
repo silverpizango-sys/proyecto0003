@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Individual - Tablas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #e74c3c;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .descripcion {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .tabla-notas {
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .tabla-notas th,
+        .tabla-notas td {
+            border: 2px solid #333;
+            padding: 12px 25px;
+            text-align: center;
+        }
+        
+        .tabla-notas th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .tabla-notas .fila-destacada {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        
+        .tabla-enlaces {
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .tabla-enlaces td {
+            border: 2px solid #999;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+        }
+        
+        .tabla-enlaces a {
+            text-decoration: none;
+            display: block;
+        }
+        
+        .tabla-enlaces img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        .tabla-enlaces .texto-enlace {
+            color: #333;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .separador {
+            margin: 60px 0;
+            border-top: 2px solid #ddd;
+        }
+        
+        .pie {
+            text-align: right;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .tabla-gastronomia {
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+        
+        .tabla-gastronomia td {
+            border: 2px solid #999;
+            padding: 15px;
+            vertical-align: middle;
+        }
+        
+        .tabla-gastronomia .columna-categoria {
+            width: 200px;
+            font-weight: bold;
+            background-color: #f8f8f8;
+        }
+        
+        .tabla-gastronomia .columna-subcategoria {
+            width: 250px;
+            padding-left: 20px;
+        }
+        
+        .tabla-gastronomia .columna-imagen {
+            width: 300px;
+            text-align: center;
+        }
+        
+        .tabla-gastronomia img {
+            max-width: 280px;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .tabla-gastronomia a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .tabla-gastronomia a:hover {
+            text-decoration: underline;
+        }
+        
+        .categoria-principal {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PRÁCTICA INDIVIDUAL</h1>
+        
+        <p class="descripcion">
+           
+        </p>
+        
+        <table class="tabla-notas">
+            <tr>
+                <th>ALUMNO</th>
+                <th>NOTA</th>
+            </tr>
+            <tr>
+                <td>Pepe</td>
+                <td>7,65</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>8,54</td>
+            </tr>
+            <tr>
+                <td>Jordi</td>
+                <td>5,55</td>
+            </tr>
+            <tr class="fila-destacada">
+                <td>MEDIA</td>
+                <td>7,25</td>
+            </tr>
+            <tr class="fila-destacada">
+                <td>DESV. TÍPICA</td>
+                <td>7,35</td>
+            </tr>
+        </table>
+        
+        <table class="tabla-enlaces">
+            <tr>
+                <td>
+                    <a href="https://www.amazon.com" target="_blank">
+                        <img src="file:///C:/Users/coope/OneDrive/Escritorio/Mi_Proyecto_HTML/logos/Amazon_logo.svg" alt="Amazon">
+                        <div class="texto-enlace">Arriba está Amazon</div>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="file:///C:/Users/coope/OneDrive/Escritorio/Mi_Proyecto_HTML/logos/YouTube_Logo_2017.svg" alt="YouTube">
+                        <div class="texto-enlace">Arriba está Youtube</div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="separador"></div>
+        
+        <table class="tabla-gastronomia">
+            <tr>
+                <td rowspan="4" class="columna-categoria">
+                    <a href="#" class="categoria-principal">Gastronomía</a>
+                </td>
+                <td class="columna-subcategoria">Restaurantes</td>
+                <td rowspan="2" class="columna-imagen">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="Sidrerías y asadores">
+                </td>
+            </tr>
+            <tr>
+                <td class="columna-subcategoria">Sidrerías y asadores</td>
+            </tr>
+            <tr>
+                <td class="columna-subcategoria">Bodegas de vaso y txakoli</td>
+                <td rowspan="2" class="columna-imagen">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400" alt="Productos típicos">
+                </td>
+            </tr>
+            <tr>
+                <td class="columna-subcategoria">Productos típicos</td>
+            </tr>
+            <tr>
+                <td class="columna-categoria">
+                    <a href="#" class="categoria-principal">Escuelas de hostelería</a>
+                </td>
+                <td class="columna-subcategoria"></td>
+                <td class="columna-imagen"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="columna-categoria">
+                    <a href="#" class="categoria-principal">Cultura</a>
+                </td>
+                <td class="columna-subcategoria">archivos y bibliotecas</td>
+                <td rowspan="3" class="columna-imagen">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400" alt="Cultura">
+                </td>
+            </tr>
+            <tr>
+                <td class="columna-subcategoria">museos</td>
+            </tr>
+            <tr>
+                <td class="columna-subcategoria">palacios de congresos</td>
+            </tr>
+            <tr>
+                <td class="columna-categoria">
+                    <a href="#" class="categoria-principal">temas de muestras</a>
+                </td>
+                <td class="columna-subcategoria"></td>
+                <td class="columna-imagen"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="columna-categoria">
+                    <a href="#" class="categoria-principal">Ocio</a>
+                </td>
+                <td class="columna-subcategoria">Entretenimiento y diversión</td>
+                <td rowspan="3" class="columna-imagen">
+                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400" alt="Ocio">
+                </td>
+            </tr>
+            <tr>
+                <td class="columna-subcategoria">Ocio cultural</td>
+            </tr>
+            <tr>
+                <td class="columna-subcategoria">Excursiones y deporte</td>
+            </tr>
+        </table>
+        
+        <div class="pie">
+            Trabajo:Grupal
+        </div>
+    </div>
+</body>
+</html>
